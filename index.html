@@ -31,16 +31,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&amp;display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&amp;display=swap" rel="stylesheet">	
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script>
 		 $(document).ready(function(){
@@ -57,7 +48,7 @@
 body{
 background:#171733;
 color:#FFFFFF;
-font-family: 'Roboto', sans-serif;
+font-family: 'Archivo', sans-serif;
 font-size:16px;
 font-weight: normal;
 font-style: normal;
@@ -118,7 +109,14 @@ font-size:3em;;
 letter-spacing:0px;
     position:relative;
 color:#F2BC1C;
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+    
+    background-image: -webkit-gradient(linear, left top, right top, from(#2d9ee0), to(#8bdcf7));
+    background-image: linear-gradient( 
+90deg , #2d9ee0 0%, #8bdcf7 100%);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
     
@@ -146,13 +144,13 @@ font-size:1em;
 }
 
 .hero-container .telegram-button{
-color: #F2BC1C;
-background-color: transparent;
+color: #FFFFFF;
+background-color: #2d9ee0;
 
 position: relative;
 z-index: 1;
 overflow: hidden;
-border: solid 1px #F2BC1C;
+border: solid 1px #2d9ee0;
 border-radius:1em;
 padding:16px 20px;
 font-weight:600;
@@ -180,7 +178,7 @@ color:#ffffff;
 .section-title{
 font-size:3em;
 font-weight:700;
-font-family:'Roboto Slab';
+font-family:'Archivo Narrow';
 /*text-shadow: 10px #2C174F;*/
     color:#F2BC1C !important;
 }
@@ -355,23 +353,63 @@ margin-top:4px;
     
 /* ---------------- */
 
-/* SWAP SECTION */ 
+/* TOKENOMICS SECTION */
 
 .swap-section{
 }
-	
+
 .swap-container{
-color:#ffffff;
+color:#FFFFFF;
 }
 
-.swap-container .swap-title{
-font-size:2.5em;
-font-weight:700;
-text-shadow: 2px 2px #73D672;
+.swap-container .tokenomics-title{
 }
-    
+
+.swap-container .tokenomics-description{
+}
+
 /* ---------------- */
 
+    
+     /* FAQ SECTION */ 
+
+.faq-section{
+background:#1D1D40;
+}
+	
+.faq-container{
+color:#C012D1;
+}
+
+.faq-container .accordion-item {
+    background-color: #000000;
+    border: 1px solid rgba(0,0,0,.125);
+}   
+
+.faq-container .accordion-button{
+    color: #FFFFFF !important;
+    background-color: #000000 !important;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%) important;
+}
+
+.faq-container .accordion-item{
+    margin-bottom:8px;
+}
+
+.faq-container .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFFFFF'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+    
+.faq-container .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFFFFF'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.faq-container .accordion-body{
+color:#FFFFFF;
+}
+/* ---------------- */
+    
 /* FOOTER SECTION */
 
 .footer-section{
@@ -643,7 +681,7 @@ background-repeat: no-repeat;
 
 <header>
 <nav class="navbar navbar-expand-lg navbar-dark" id="#home">
-<div class="container" data-aos="fade">
+<div class="container aos-init aos-animate" data-aos="fade">
 <a class="navbar-brand d-flex flex-row justify-content-center align-items-center" href="/">
     <img class="img-fluid me-2" src="images/front-coin-3.png" width="40px">
 <h1 class="d-none" style="font-size:1em;font-weight:500;font-family:'PT Sans Narrow',sans-serif;color:#FFFFFF">$BUFFETT</h1></a>
@@ -666,19 +704,19 @@ background-repeat: no-repeat;
 
     
 <section class="hero-section">
-<div class="hero-container container py-5 d-flex flex-column justify-content-center align-items-center" data-aos="fade">
+<div class="hero-container container py-5 d-flex flex-column justify-content-center align-items-center aos-init aos-animate" data-aos="fade">
 <div class="row">
 
-<div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center" data-aos="fade-right">
+<div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center aos-init aos-animate" data-aos="fade-right">
 
-<h1 class="hero-title text-center">Warren Buffett Coin</h1>
+<h1 class="hero-title text-center">Welcome To Twinance</h1>
 <img class="img-fluid d-block d-none " src="images/shibam-text.png" style="max-height:70px;">
-<p class="hero-description mt-1">"If you told me you own all of the bitcoin in the world and you offered it to me for $25, I wouldn’t take it because what would I do with it?"<span class="d-block mt-1" style="opacity:100%;font-weight:700;font-size:1em;font-family:'Roboto Condensed'">- Warren Buffett</span></p>
+<p class="hero-description mt-1">ChadCoin is a hyper-deflationary, community-driven token on the Binance Smart Chain.</p>
 <div class="d-flex flex-column flex-sm-row mt-3">
-<a type="button" class="buy-button btn btn-primary m-2 " href="https://pancakeswap.finance/swap?outputCurrency=0x97de8229145847599f99c7ab0247bb1391dc6836" target="_blank">Buy On Pancakeswap</a>
-<a type="button" class="telegram-button btn btn-primary m-2" href="https://t.me/warrenbuffettcoin" target="_blank">Join Our Telegram</a>
+<a type="button" class="buy-button btn btn-primary m-2 " href="https://pancakeswap.finance/swap?outputCurrency=0xa96621e770938374f24fa7a184bc5807dc7acbc5" target="_blank">Buy On Pancakeswap</a>
+<a type="button" class="telegram-button btn btn-primary m-2" href="https://t.me/TwinancePortal" target="_blank">Join Our Telegram</a>
 </div>
-</div><div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center py-5" data-aos="fade-left" style="position:relative;"><div class="ratio ratio-1x1">
+</div><div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center py-5 aos-init aos-animate" data-aos="fade-left" style="position:relative;"><div class="ratio ratio-1x1">
  <div id="coin">
   <article class="back"></article>
     <article class="middle"></article>
@@ -706,21 +744,21 @@ background-repeat: no-repeat;
 
 <section id="about" class="section about-section">
 <div class="section-container about-container container py-5">
-<h2 class="section-title about-title mt-4 text-center" data-aos="fade">ABOUT</h2>
+<h2 class="section-title about-title mt-4 text-center aos-init" data-aos="fade">ABOUT</h2>
 
 <div class="row mt-5">
 <div class="col-12 text-center">
-<p class="section-description about-description" data-aos="fade">$BUFFET is a community-driven token deployed on the Binance Smart Chain through the BSC medium. It is community driven and backed by a strong team to deliver for investors with the goal of creating wealth and use case just by holding $BUFFET. To achieve this vision, a detailed roadmap is laid out and the liquidity is locked initially to grant investors confidence in this project.</p>
+<p class="section-description about-description aos-init" data-aos="fade">$BUFFET is a community-driven token deployed on the Binance Smart Chain through the BSC medium. It is community driven and backed by a strong team to deliver for investors with the goal of creating wealth and use case just by holding $BUFFET. To achieve this vision, a detailed roadmap is laid out and the liquidity is locked initially to grant investors confidence in this project.</p>
 </div>
 </div>
 </div>
 </section>
 <section id="features" class="section features-section pt-5">
 <div class="section-container features-container container py-5">
-<h2 class="section-title tokenomics-title text-center" data-aos="fade">FEATURES</h2>
+<h2 class="section-title tokenomics-title text-center aos-init" data-aos="fade">FEATURES</h2>
 <div class="row mt-5 mb-4">
 
-<div class="col-12 col-lg-4 mb-4" data-aos="fade">
+<div class="col-12 col-lg-4 mb-4 aos-init" data-aos="fade">
 <div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto">
 <img class="img-fluid mb-4" src="images/community-driven-2.png" style="max-height:100px;">
 <span class="tax-title-2 text-center mb-2">Community Driven</span><span class="tax-description text-center">Community focused and fair launched. The future of the project will depend on the community.</span>
@@ -728,12 +766,12 @@ background-repeat: no-repeat;
 </div>
 
 
-<div class="col-12 col-lg-4 mb-4" data-aos="fade">
+<div class="col-12 col-lg-4 mb-4 aos-init" data-aos="fade">
 <div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto">
 <img class="img-fluid mb-4" src="images/lp-lock-2.png" style="max-height:100px;">
 <span class="tax-title-2 text-center mb-2">Secured By Design</span><span class="tax-description text-center">Initial Liquidity Provided will be locked. This ensures that the project will not be rug-pulled.</span>
 </div>
-</div><div class="col-12 col-lg-4 mb-4" data-aos="fade">
+</div><div class="col-12 col-lg-4 mb-4 aos-init" data-aos="fade">
 <div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto">
 <img class="p-1 img-fluid mb-4 " src="images/anti-whale-2.png" style="max-height:100px;">
 <span class="tax-title-2 text-center mb-2">Safe and Whale-Proof</span><span class="tax-description text-center">Sells are restricted to less than 2% of the total supply to reduce swing-trading and break whales' control.</span>
@@ -747,9 +785,9 @@ background-repeat: no-repeat;
 
 <section id="tokenomics" class="section tokenomics-section">
 <div class="section-container tokenomics-container container py-5">
-<h2 class="mt-4 section-title tokenomics-title text-center" data-aos="fade">TOKENOMICS</h2>
+<h2 class="mt-4 section-title tokenomics-title text-center aos-init" data-aos="fade">TOKENOMICS</h2>
 <div class="row">
-<div class="col-12" data-aos="fade">
+<div class="col-12 aos-init" data-aos="fade">
                        <table class="table table-striped tokenomics-info-table mt-5 mb-4 mx-auto">
 					<tbody><tr>
 						<td style="font-weight:500;">Token Name</td>
@@ -774,14 +812,14 @@ background-repeat: no-repeat;
 <div class="row mb-4">
 
 <div class="col-12 col-lg-4 mb-4 ms-auto">
-<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto" data-aos="fade">
+<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto aos-init" data-aos="fade">
 <span class="tax-title text-center mb-4">3%</span>
 <span class="tax-title-2 text-center mb-2">Liquidity Pool</span><span class="tax-description text-center">3% of every transaction is transformed into liquidity. It's automatic and helps create a price floor.</span>
 </div>
 </div>
 
 <div class="col-12 col-lg-4 mb-4 me-auto">
-<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto" data-aos="fade">
+<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto aos-init" data-aos="fade">
 <span class="tax-title text-center mb-4">6%</span>
 <span class="tax-title-2 text-center mb-2">Marketing</span><span class="tax-description text-center">6% of every transaction is taken and will be used for enhancements, operations, and marketing of the project.</span>
 </div>
@@ -797,113 +835,129 @@ background-repeat: no-repeat;
 
 
 <section id="roadmap" class="section roadmap-section">
-<div class="section-container roadmap-container container py-5" data-aos="fade">
+<div class="section-container roadmap-container container py-5 aos-init" data-aos="fade">
 <div class="text-center">
-<h2 class="section-title roadmap-title mt-4" data-aos="fade">ROADMAP</h2>
-
+<h2 class="section-title roadmap-title mt-4 aos-init" data-aos="fade">ROADMAP</h2>
+<div class="row mt-5 mb-4">
+<div class="col-12 col-lg-4 text-center py-3 aos-init" data-aos="fade">
+<h4>PHASE 1</h4>
+<ul class="list-unstyled text-small text-center mt-3">
+<li>Telegram and Twitter Launch<svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#C012D1" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+<li>Initial Marketing Campaign<svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#C012D1" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+<li>Pancakeswap Fair Launch<svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#C012D1" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+<li>LP Lock Extension<svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#C012D1" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+<li>Website V1 Launch<svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#C012D1" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+</ul>
 </div>
-<div class="d-flex d-lg-none row mt-5" data-aos="fade"><div class="col-12 col-lg-6"><div class="phase-title-wrapper mx-auto mx-lg-0 ms-lg-auto d-flex flex-column justify-content-center align-items-center" style="height:200px;width:200px;border:4px solid #F2BC1C;border-radius:50%;background:transparent"><h3 style="font-weight:700;font-size:2em;">PHASE 1</h3></div></div>
-<div class="col-12 col-lg-6 mt-4"><ul class="list-unstyled">
-
-
-<li class="d-flex flex-row align-items-center m-0"><div style="margin-left:-15px;margin-top:-15px;;min-height:75px;min-width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg"><path fill="#FFFFFF" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></div><div style="font-size:0.875em;z-index:0;height:45px;padding:12px 40px;background:#171733;margin-left:-24px;margin-top:-15px;width:100%;white-space:nowrap;overflow:hidden;">Telegram and Twitter Launch</div></li>
-<li class="d-flex flex-row align-items-center m-0"><div style="margin-left:-15px;margin-top:-15px;;min-height:75px;min-width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg"><path fill="#FFFFFF" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></div><div style="font-size:0.875em;z-index:0;height:45px;padding:12px 40px;background:#171733;margin-left:-24px;margin-top:-15px;width:100%;white-space:nowrap;overflow:hidden;">Initial Marketing Campaign</div></li>
-<li class="d-flex flex-row align-items-center m-0"><div style="margin-left:-15px;margin-top:-15px;;min-height:75px;min-width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg"><path fill="#FFFFFF" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></div><div style="font-size:0.875em;z-index:0;height:45px;padding:12px 40px;background:#171733;margin-left:-24px;margin-top:-15px;width:100%;white-space:nowrap;overflow:hidden;">Pancakeswap Fair Launch</div></li>
-<li class="d-flex flex-row align-items-center m-0"><div style="margin-left:-15px;margin-top:-15px;;min-height:75px;min-width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg"><path fill="#FFFFFF" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></div><div style="font-size:0.875em;z-index:0;height:45px;padding:12px 40px;background:#171733;margin-left:-24px;margin-top:-15px;width:100%;white-space:nowrap;overflow:hidden;">LP Lock Extension
-</div></li>
-<li class="d-flex flex-row align-items-center m-0"><div style="margin-left:-15px;margin-top:-15px;;min-height:75px;min-width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg"><path fill="#FFFFFF" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></div><div style="font-size:0.875em;z-index:0;height:45px;padding:12px 40px;background:#171733;margin-left:-24px;margin-top:-15px;width:100%;white-space:nowrap;overflow:hidden;">Website V1 Launch
-</div></li>
-
-
-</ul></div>
+<div class="col-12 col-lg-4 text-center py-3 aos-init" data-aos="fade">
+<h4>PHASE 2</h4>
+<ul class="list-unstyled text-small text-center mt-3">
+<li>Community Shilling</li>
+<li>Coin Listing Sites</li>
+<li>Telegram and Twitter Calls</li>
+<li>Coingecko Listing</li>
+<li>Coinmarketcap Listing</li>
+</ul>
+</div>
+<div class="col-12 col-lg-4 text-center py-3 aos-init" data-aos="fade">
+<h4>PHASE 3</h4>
+<ul class="list-unstyled text-small text-center mt-3">
+<li>Merchandise Launch</li>
+<li>Staking Platform Launch</li>
+<li>Swap Platform Launch</li>
+<li>Secret Utilities Along With</li>
+<li>Massive Marketing Campaign</li>
+</ul>
+</div>
 </div>
 
-<div class="d-none d-lg-flex row mt-5" data-aos="fade"><div class="col-12 col-lg-6"><div class="phase-title-wrapper mx-auto mx-lg-0 ms-lg-auto d-flex flex-column justify-content-center align-items-center" style="height:285px;width:285px;border:4px solid #F2BC1C;border-radius:50%;background:transparent"><h3 style="font-weight:700;font-size:2em;">PHASE 1</h3></div></div>
-<div class="col-12 col-lg-6"><ul class="list-unstyled">
-<li class="d-flex flex-row align-items-center m-0"><div style="margin-top:-15px;margin-left:-50px;height:75px;width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg"><path fill="#FFFFFF" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></div><div style="height:45px;padding:12px 70px;z-index:0;background:#171733;margin-left:-24px;margin-top:-15px;">Telegram and Twitter Launch</div></li>
-<li class="d-flex flex-row align-items-center m-0"><div style="margin-top:-15px;margin-left:-25px;height:75px;width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg"><path fill="#FFFFFF" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></div><div style="height:45px;padding:12px 70px;z-index:0;background:#171733;margin-left:-24px;margin-top:-15px;">Initial Marketing Campaign</div></li>
-<li class="d-flex flex-row align-items-center m-0"><div style="margin-top:-15px;margin-left:0px;height:75px;width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg"><path fill="#FFFFFF" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></div><div style="height:45px;padding:12px 70px;z-index:0;background:#171733;margin-left:-24px;margin-top:-15px;">Pancakeswap Fair Launch</div></li>
-<li class="d-flex flex-row align-items-center m-0"><div style="margin-top:-15px;margin-left:-25px;height:75px;width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg"><path fill="#FFFFFF" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></div><div style="height:45px;padding:12px 70px;z-index:0;background:#171733;margin-left:-24px;margin-top:-15px;">LP Lock Extension</div></li>
-<li class="d-flex flex-row align-items-center m-0"><div style="margin-top:-15px;margin-left:-50px;height:75px;width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg"><path fill="#FFFFFF" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></div><div style="height:45px;padding:12px 70px;z-index:0;background:#171733;margin-left:-24px;margin-top:-15px;">Website V1 Launch</div></li>
-</ul></div>
-</div><div class="d-flex d-lg-none row mt-3" data-aos="fade"><div class="col-12 col-lg-6"><div class="phase-title-wrapper mx-auto mx-lg-0 ms-lg-auto d-flex flex-column justify-content-center align-items-center" style="height:200px;width:200px;border:4px solid #F2BC1C;border-radius:50%;background:transparent"><h3 style="font-weight:700;font-size:2em;">PHASE 2</h3></div></div>
-<div class="col-12 col-lg-6 mt-4"><ul class="list-unstyled">
-
-
-<li class="d-flex flex-row align-items-center m-0"><div style="margin-left:-15px;margin-top:-15px;;min-height:75px;min-width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18.513 7.119c.958-1.143 1.487-2.577 1.487-4.036v-3.083h-16v3.083c0 1.459.528 2.892 1.487 4.035l3.086 3.68c.567.677.571 1.625.009 2.306l-3.13 3.794c-.936 1.136-1.452 2.555-1.452 3.995v3.107h16v-3.107c0-1.44-.517-2.858-1.453-3.994l-3.13-3.794c-.562-.681-.558-1.629.009-2.306l3.087-3.68zm-4.639 7.257l3.13 3.794c.652.792.996 1.726.996 2.83h-12c0-1.104.343-2.039.996-2.829l3.129-3.793c1.167-1.414 1.159-3.459-.019-4.864l-3.086-3.681c-.66-.785-1.02-1.736-1.02-2.834h12c0 1.101-.363 2.05-1.02 2.834l-3.087 3.68c-1.177 1.405-1.185 3.451-.019 4.863z"></path></svg></div><div style="font-size:0.875em;z-index:0;height:45px;padding:12px 40px;background:#171733;margin-left:-24px;margin-top:-15px;width:100%;white-space:nowrap;overflow:hidden;">Organic and Community Growth</div></li>
-<li class="d-flex flex-row align-items-center m-0"><div style="margin-left:-15px;margin-top:-15px;;min-height:75px;min-width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18.513 7.119c.958-1.143 1.487-2.577 1.487-4.036v-3.083h-16v3.083c0 1.459.528 2.892 1.487 4.035l3.086 3.68c.567.677.571 1.625.009 2.306l-3.13 3.794c-.936 1.136-1.452 2.555-1.452 3.995v3.107h16v-3.107c0-1.44-.517-2.858-1.453-3.994l-3.13-3.794c-.562-.681-.558-1.629.009-2.306l3.087-3.68zm-4.639 7.257l3.13 3.794c.652.792.996 1.726.996 2.83h-12c0-1.104.343-2.039.996-2.829l3.129-3.793c1.167-1.414 1.159-3.459-.019-4.864l-3.086-3.681c-.66-.785-1.02-1.736-1.02-2.834h12c0 1.101-.363 2.05-1.02 2.834l-3.087 3.68c-1.177 1.405-1.185 3.451-.019 4.863z"></path></svg></div><div style="font-size:0.875em;z-index:0;height:45px;padding:12px 40px;background:#171733;margin-left:-24px;margin-top:-15px;width:100%;white-space:nowrap;overflow:hidden;">Coin Listing Sites</div></li>
-<li class="d-flex flex-row align-items-center m-0"><div style="margin-left:-15px;margin-top:-15px;;min-height:75px;min-width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18.513 7.119c.958-1.143 1.487-2.577 1.487-4.036v-3.083h-16v3.083c0 1.459.528 2.892 1.487 4.035l3.086 3.68c.567.677.571 1.625.009 2.306l-3.13 3.794c-.936 1.136-1.452 2.555-1.452 3.995v3.107h16v-3.107c0-1.44-.517-2.858-1.453-3.994l-3.13-3.794c-.562-.681-.558-1.629.009-2.306l3.087-3.68zm-4.639 7.257l3.13 3.794c.652.792.996 1.726.996 2.83h-12c0-1.104.343-2.039.996-2.829l3.129-3.793c1.167-1.414 1.159-3.459-.019-4.864l-3.086-3.681c-.66-.785-1.02-1.736-1.02-2.834h12c0 1.101-.363 2.05-1.02 2.834l-3.087 3.68c-1.177 1.405-1.185 3.451-.019 4.863z"></path></svg></div><div style="font-size:0.875em;z-index:0;height:45px;padding:12px 40px;background:#171733;margin-left:-24px;margin-top:-15px;width:100%;white-space:nowrap;overflow:hidden;">Telegram Marketing</div></li>
-<li class="d-flex flex-row align-items-center m-0"><div style="margin-left:-15px;margin-top:-15px;;min-height:75px;min-width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18.513 7.119c.958-1.143 1.487-2.577 1.487-4.036v-3.083h-16v3.083c0 1.459.528 2.892 1.487 4.035l3.086 3.68c.567.677.571 1.625.009 2.306l-3.13 3.794c-.936 1.136-1.452 2.555-1.452 3.995v3.107h16v-3.107c0-1.44-.517-2.858-1.453-3.994l-3.13-3.794c-.562-.681-.558-1.629.009-2.306l3.087-3.68zm-4.639 7.257l3.13 3.794c.652.792.996 1.726.996 2.83h-12c0-1.104.343-2.039.996-2.829l3.129-3.793c1.167-1.414 1.159-3.459-.019-4.864l-3.086-3.681c-.66-.785-1.02-1.736-1.02-2.834h12c0 1.101-.363 2.05-1.02 2.834l-3.087 3.68c-1.177 1.405-1.185 3.451-.019 4.863z"></path></svg></div><div style="font-size:0.875em;z-index:0;height:45px;padding:12px 40px;background:#171733;margin-left:-24px;margin-top:-15px;width:100%;white-space:nowrap;overflow:hidden;">Twitter Marketing</div></li>
-<li class="d-flex flex-row align-items-center m-0"><div style="margin-left:-15px;margin-top:-15px;;min-height:75px;min-width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18.513 7.119c.958-1.143 1.487-2.577 1.487-4.036v-3.083h-16v3.083c0 1.459.528 2.892 1.487 4.035l3.086 3.68c.567.677.571 1.625.009 2.306l-3.13 3.794c-.936 1.136-1.452 2.555-1.452 3.995v3.107h16v-3.107c0-1.44-.517-2.858-1.453-3.994l-3.13-3.794c-.562-.681-.558-1.629.009-2.306l3.087-3.68zm-4.639 7.257l3.13 3.794c.652.792.996 1.726.996 2.83h-12c0-1.104.343-2.039.996-2.829l3.129-3.793c1.167-1.414 1.159-3.459-.019-4.864l-3.086-3.681c-.66-.785-1.02-1.736-1.02-2.834h12c0 1.101-.363 2.05-1.02 2.834l-3.087 3.68c-1.177 1.405-1.185 3.451-.019 4.863z"></path></svg></div><div style="font-size:0.875em;z-index:0;height:45px;padding:12px 40px;background:#171733;margin-left:-24px;margin-top:-15px;width:100%;white-space:nowrap;overflow:hidden;">Dextools Trending</div></li>
-
-
-</ul></div>
 </div>
 
 
 
-<div class="d-none d-lg-flex row mt-5" data-aos="fade"><div class="col-12 col-lg-6 order-sm-1 order-lg-2"><div class="phase-title-wrapper mx-auto mx-lg-0 me-lg-auto d-flex flex-column justify-content-center align-items-center" style="height:285px;width:285px;border:4px solid #F2BC1C;border-radius:50%;background:transparent"><h3 style="font-weight:700;font-size:2em;">PHASE 2</h3></div></div>
-<div class="col-12 col-lg-6 order-sm-2 order-lg-1"><ul class="list-unstyled"><li class="d-flex flex-row-reverse align-items-center m-0"><div style="margin-top:-15px;margin-right:-50px;height:75px;width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18.513 7.119c.958-1.143 1.487-2.577 1.487-4.036v-3.083h-16v3.083c0 1.459.528 2.892 1.487 4.035l3.086 3.68c.567.677.571 1.625.009 2.306l-3.13 3.794c-.936 1.136-1.452 2.555-1.452 3.995v3.107h16v-3.107c0-1.44-.517-2.858-1.453-3.994l-3.13-3.794c-.562-.681-.558-1.629.009-2.306l3.087-3.68zm-4.639 7.257l3.13 3.794c.652.792.996 1.726.996 2.83h-12c0-1.104.343-2.039.996-2.829l3.129-3.793c1.167-1.414 1.159-3.459-.019-4.864l-3.086-3.681c-.66-.785-1.02-1.736-1.02-2.834h12c0 1.101-.363 2.05-1.02 2.834l-3.087 3.68c-1.177 1.405-1.185 3.451-.019 4.863z"></path></svg></div><div style="z-index:-1;height:45px;padding:12px 70px;z-index:0;background:#171733;margin-right:-24px;margin-top:-15px;">Organic and Community Growth</div></li>
-
-<li class="d-flex flex-row-reverse align-items-center m-0"><div style="margin-top:-15px;margin-right:-25px;height:75px;width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18.513 7.119c.958-1.143 1.487-2.577 1.487-4.036v-3.083h-16v3.083c0 1.459.528 2.892 1.487 4.035l3.086 3.68c.567.677.571 1.625.009 2.306l-3.13 3.794c-.936 1.136-1.452 2.555-1.452 3.995v3.107h16v-3.107c0-1.44-.517-2.858-1.453-3.994l-3.13-3.794c-.562-.681-.558-1.629.009-2.306l3.087-3.68zm-4.639 7.257l3.13 3.794c.652.792.996 1.726.996 2.83h-12c0-1.104.343-2.039.996-2.829l3.129-3.793c1.167-1.414 1.159-3.459-.019-4.864l-3.086-3.681c-.66-.785-1.02-1.736-1.02-2.834h12c0 1.101-.363 2.05-1.02 2.834l-3.087 3.68c-1.177 1.405-1.185 3.451-.019 4.863z"></path></svg></div><div style="z-index:-1;height:45px;padding:12px 70px;z-index:0;background:#171733;margin-right:-24px;margin-top:-15px;">Coin Listing Sites</div></li>
-
-<li class="d-flex flex-row-reverse align-items-center m-0"><div style="margin-top:-15px;margin-right:0px;height:75px;width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18.513 7.119c.958-1.143 1.487-2.577 1.487-4.036v-3.083h-16v3.083c0 1.459.528 2.892 1.487 4.035l3.086 3.68c.567.677.571 1.625.009 2.306l-3.13 3.794c-.936 1.136-1.452 2.555-1.452 3.995v3.107h16v-3.107c0-1.44-.517-2.858-1.453-3.994l-3.13-3.794c-.562-.681-.558-1.629.009-2.306l3.087-3.68zm-4.639 7.257l3.13 3.794c.652.792.996 1.726.996 2.83h-12c0-1.104.343-2.039.996-2.829l3.129-3.793c1.167-1.414 1.159-3.459-.019-4.864l-3.086-3.681c-.66-.785-1.02-1.736-1.02-2.834h12c0 1.101-.363 2.05-1.02 2.834l-3.087 3.68c-1.177 1.405-1.185 3.451-.019 4.863z"></path></svg></div><div style="z-index:-1;height:45px;padding:12px 70px;z-index:0;background:#171733;margin-right:-24px;margin-top:-15px;">Telegram Marketing</div></li><li class="d-flex flex-row-reverse align-items-center m-0"><div style="margin-top:-15px;margin-right:-25px;height:75px;width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18.513 7.119c.958-1.143 1.487-2.577 1.487-4.036v-3.083h-16v3.083c0 1.459.528 2.892 1.487 4.035l3.086 3.68c.567.677.571 1.625.009 2.306l-3.13 3.794c-.936 1.136-1.452 2.555-1.452 3.995v3.107h16v-3.107c0-1.44-.517-2.858-1.453-3.994l-3.13-3.794c-.562-.681-.558-1.629.009-2.306l3.087-3.68zm-4.639 7.257l3.13 3.794c.652.792.996 1.726.996 2.83h-12c0-1.104.343-2.039.996-2.829l3.129-3.793c1.167-1.414 1.159-3.459-.019-4.864l-3.086-3.681c-.66-.785-1.02-1.736-1.02-2.834h12c0 1.101-.363 2.05-1.02 2.834l-3.087 3.68c-1.177 1.405-1.185 3.451-.019 4.863z"></path></svg></div><div style="z-index:-1;height:45px;padding:12px 70px;z-index:0;background:#171733;margin-right:-24px;margin-top:-15px;">Twitter Marketing</div></li>
-
-<li class="d-flex flex-row-reverse align-items-center m-0"><div style="margin-top:-15px;margin-right:-50px;height:75px;width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18.513 7.119c.958-1.143 1.487-2.577 1.487-4.036v-3.083h-16v3.083c0 1.459.528 2.892 1.487 4.035l3.086 3.68c.567.677.571 1.625.009 2.306l-3.13 3.794c-.936 1.136-1.452 2.555-1.452 3.995v3.107h16v-3.107c0-1.44-.517-2.858-1.453-3.994l-3.13-3.794c-.562-.681-.558-1.629.009-2.306l3.087-3.68zm-4.639 7.257l3.13 3.794c.652.792.996 1.726.996 2.83h-12c0-1.104.343-2.039.996-2.829l3.129-3.793c1.167-1.414 1.159-3.459-.019-4.864l-3.086-3.681c-.66-.785-1.02-1.736-1.02-2.834h12c0 1.101-.363 2.05-1.02 2.834l-3.087 3.68c-1.177 1.405-1.185 3.451-.019 4.863z"></path></svg></div><div style="z-index:-1;height:45px;padding:12px 70px;z-index:0;background:#171733;margin-right:-24px;margin-top:-15px;">Dextools Trending</div></li>
-</ul></div>
-</div><div class="d-flex d-lg-none row mt-3" data-aos="fade"><div class="col-12 col-lg-6"><div class="phase-title-wrapper mx-auto mx-lg-0 ms-lg-auto d-flex flex-column justify-content-center align-items-center" style="height:200px;width:200px;border:4px solid #F2BC1C;border-radius:50%;background:transparent"><h3 style="font-weight:700;font-size:2em;">PHASE 3</h3></div></div>
-<div class="col-12 col-lg-6 mt-4"><ul class="list-unstyled">
 
 
-<li class="d-flex flex-row align-items-center m-0"><div style="margin-left:-15px;margin-top:-15px;;min-height:75px;min-width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18.513 7.119c.958-1.143 1.487-2.577 1.487-4.036v-3.083h-16v3.083c0 1.459.528 2.892 1.487 4.035l3.086 3.68c.567.677.571 1.625.009 2.306l-3.13 3.794c-.936 1.136-1.452 2.555-1.452 3.995v3.107h16v-3.107c0-1.44-.517-2.858-1.453-3.994l-3.13-3.794c-.562-.681-.558-1.629.009-2.306l3.087-3.68zm-4.639 7.257l3.13 3.794c.652.792.996 1.726.996 2.83h-12c0-1.104.343-2.039.996-2.829l3.129-3.793c1.167-1.414 1.159-3.459-.019-4.864l-3.086-3.681c-.66-.785-1.02-1.736-1.02-2.834h12c0 1.101-.363 2.05-1.02 2.834l-3.087 3.68c-1.177 1.405-1.185 3.451-.019 4.863z"></path></svg></div><div style="font-size:0.875em;z-index:0;height:45px;padding:12px 40px;background:#171733;margin-left:-24px;margin-top:-15px;width:100%;white-space:nowrap;overflow:hidden;">Security Audit</div></li>
-<li class="d-flex flex-row align-items-center m-0"><div style="margin-left:-15px;margin-top:-15px;;min-height:75px;min-width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18.513 7.119c.958-1.143 1.487-2.577 1.487-4.036v-3.083h-16v3.083c0 1.459.528 2.892 1.487 4.035l3.086 3.68c.567.677.571 1.625.009 2.306l-3.13 3.794c-.936 1.136-1.452 2.555-1.452 3.995v3.107h16v-3.107c0-1.44-.517-2.858-1.453-3.994l-3.13-3.794c-.562-.681-.558-1.629.009-2.306l3.087-3.68zm-4.639 7.257l3.13 3.794c.652.792.996 1.726.996 2.83h-12c0-1.104.343-2.039.996-2.829l3.129-3.793c1.167-1.414 1.159-3.459-.019-4.864l-3.086-3.681c-.66-.785-1.02-1.736-1.02-2.834h12c0 1.101-.363 2.05-1.02 2.834l-3.087 3.68c-1.177 1.405-1.185 3.451-.019 4.863z"></path></svg></div><div style="font-size:0.875em;z-index:0;height:45px;padding:12px 40px;background:#171733;margin-left:-24px;margin-top:-15px;width:100%;white-space:nowrap;overflow:hidden;">Coingecko Listing</div></li>
-<li class="d-flex flex-row align-items-center m-0"><div style="margin-left:-15px;margin-top:-15px;;min-height:75px;min-width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18.513 7.119c.958-1.143 1.487-2.577 1.487-4.036v-3.083h-16v3.083c0 1.459.528 2.892 1.487 4.035l3.086 3.68c.567.677.571 1.625.009 2.306l-3.13 3.794c-.936 1.136-1.452 2.555-1.452 3.995v3.107h16v-3.107c0-1.44-.517-2.858-1.453-3.994l-3.13-3.794c-.562-.681-.558-1.629.009-2.306l3.087-3.68zm-4.639 7.257l3.13 3.794c.652.792.996 1.726.996 2.83h-12c0-1.104.343-2.039.996-2.829l3.129-3.793c1.167-1.414 1.159-3.459-.019-4.864l-3.086-3.681c-.66-.785-1.02-1.736-1.02-2.834h12c0 1.101-.363 2.05-1.02 2.834l-3.087 3.68c-1.177 1.405-1.185 3.451-.019 4.863z"></path></svg></div><div style="font-size:0.875em;z-index:0;height:45px;padding:12px 40px;background:#171733;margin-left:-24px;margin-top:-15px;width:100%;white-space:nowrap;overflow:hidden;">Coinmarketcap Listing</div></li>
-<li class="d-flex flex-row align-items-center m-0"><div style="margin-left:-15px;margin-top:-15px;;min-height:75px;min-width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18.513 7.119c.958-1.143 1.487-2.577 1.487-4.036v-3.083h-16v3.083c0 1.459.528 2.892 1.487 4.035l3.086 3.68c.567.677.571 1.625.009 2.306l-3.13 3.794c-.936 1.136-1.452 2.555-1.452 3.995v3.107h16v-3.107c0-1.44-.517-2.858-1.453-3.994l-3.13-3.794c-.562-.681-.558-1.629.009-2.306l3.087-3.68zm-4.639 7.257l3.13 3.794c.652.792.996 1.726.996 2.83h-12c0-1.104.343-2.039.996-2.829l3.129-3.793c1.167-1.414 1.159-3.459-.019-4.864l-3.086-3.681c-.66-.785-1.02-1.736-1.02-2.834h12c0 1.101-.363 2.05-1.02 2.834l-3.087 3.68c-1.177 1.405-1.185 3.451-.019 4.863z"></path></svg></div><div style="font-size:0.875em;z-index:0;height:45px;padding:12px 40px;background:#171733;margin-left:-24px;margin-top:-15px;width:100%;white-space:nowrap;overflow:hidden;">Massive Marketing Campaign</div></li><li class="d-flex flex-row align-items-center m-0"><div style="margin-left:-15px;margin-top:-15px;;min-height:75px;min-width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18.513 7.119c.958-1.143 1.487-2.577 1.487-4.036v-3.083h-16v3.083c0 1.459.528 2.892 1.487 4.035l3.086 3.68c.567.677.571 1.625.009 2.306l-3.13 3.794c-.936 1.136-1.452 2.555-1.452 3.995v3.107h16v-3.107c0-1.44-.517-2.858-1.453-3.994l-3.13-3.794c-.562-.681-.558-1.629.009-2.306l3.087-3.68zm-4.639 7.257l3.13 3.794c.652.792.996 1.726.996 2.83h-12c0-1.104.343-2.039.996-2.829l3.129-3.793c1.167-1.414 1.159-3.459-.019-4.864l-3.086-3.681c-.66-.785-1.02-1.736-1.02-2.834h12c0 1.101-.363 2.05-1.02 2.834l-3.087 3.68c-1.177 1.405-1.185 3.451-.019 4.863z"></path></svg></div><div style="font-size:0.875em;z-index:0;height:45px;padding:12px 40px;background:#171733;margin-left:-24px;margin-top:-15px;width:100%;white-space:nowrap;overflow:hidden;">YouTube, Twitter &amp; TikTok 
- Influencers</div></li>
 
 
-</ul></div>
-</div>
-
-<div class="d-none d-lg-flex row mt-5" data-aos="fade"><div class="col-12 col-lg-6"><div class="phase-title-wrapper mx-auto mx-lg-0 ms-lg-auto d-flex flex-column justify-content-center align-items-center" style="height:285px;width:285px;border:4px solid #F2BC1C;border-radius:50%;background:transparent"><h3 style="font-weight:700;font-size:2em;">PHASE 3</h3></div></div>
-<div class="col-12 col-lg-6"><ul class="list-unstyled"><li class="d-flex flex-row align-items-center m-0"><div style="margin-top:-15px;margin-left:-50px;height:75px;width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18.513 7.119c.958-1.143 1.487-2.577 1.487-4.036v-3.083h-16v3.083c0 1.459.528 2.892 1.487 4.035l3.086 3.68c.567.677.571 1.625.009 2.306l-3.13 3.794c-.936 1.136-1.452 2.555-1.452 3.995v3.107h16v-3.107c0-1.44-.517-2.858-1.453-3.994l-3.13-3.794c-.562-.681-.558-1.629.009-2.306l3.087-3.68zm-4.639 7.257l3.13 3.794c.652.792.996 1.726.996 2.83h-12c0-1.104.343-2.039.996-2.829l3.129-3.793c1.167-1.414 1.159-3.459-.019-4.864l-3.086-3.681c-.66-.785-1.02-1.736-1.02-2.834h12c0 1.101-.363 2.05-1.02 2.834l-3.087 3.68c-1.177 1.405-1.185 3.451-.019 4.863z"></path></svg></div><div style="z-index:-1;height:45px;padding:12px 70px;z-index:0;background:#171733;margin-left:-24px;margin-top:-15px;">Security Audit</div></li><li class="d-flex flex-row align-items-center m-0"><div style="margin-top:-15px;margin-left:-25px;height:75px;width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18.513 7.119c.958-1.143 1.487-2.577 1.487-4.036v-3.083h-16v3.083c0 1.459.528 2.892 1.487 4.035l3.086 3.68c.567.677.571 1.625.009 2.306l-3.13 3.794c-.936 1.136-1.452 2.555-1.452 3.995v3.107h16v-3.107c0-1.44-.517-2.858-1.453-3.994l-3.13-3.794c-.562-.681-.558-1.629.009-2.306l3.087-3.68zm-4.639 7.257l3.13 3.794c.652.792.996 1.726.996 2.83h-12c0-1.104.343-2.039.996-2.829l3.129-3.793c1.167-1.414 1.159-3.459-.019-4.864l-3.086-3.681c-.66-.785-1.02-1.736-1.02-2.834h12c0 1.101-.363 2.05-1.02 2.834l-3.087 3.68c-1.177 1.405-1.185 3.451-.019 4.863z"></path></svg></div><div style="z-index:-1;height:45px;padding:12px 70px;z-index:0;background:#171733;margin-left:-24px;margin-top:-15px;">Coingecko Listing</div></li><li class="d-flex flex-row align-items-center m-0"><div style="margin-top:-15px;margin-left:0px;height:75px;width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18.513 7.119c.958-1.143 1.487-2.577 1.487-4.036v-3.083h-16v3.083c0 1.459.528 2.892 1.487 4.035l3.086 3.68c.567.677.571 1.625.009 2.306l-3.13 3.794c-.936 1.136-1.452 2.555-1.452 3.995v3.107h16v-3.107c0-1.44-.517-2.858-1.453-3.994l-3.13-3.794c-.562-.681-.558-1.629.009-2.306l3.087-3.68zm-4.639 7.257l3.13 3.794c.652.792.996 1.726.996 2.83h-12c0-1.104.343-2.039.996-2.829l3.129-3.793c1.167-1.414 1.159-3.459-.019-4.864l-3.086-3.681c-.66-.785-1.02-1.736-1.02-2.834h12c0 1.101-.363 2.05-1.02 2.834l-3.087 3.68c-1.177 1.405-1.185 3.451-.019 4.863z"></path></svg></div><div style="z-index:-1;height:45px;padding:12px 70px;z-index:0;background:#171733;margin-left:-24px;margin-top:-15px;">Coinmarketcap Listing</div></li><li class="d-flex flex-row align-items-center m-0"><div style="margin-top:-15px;margin-left:-25px;height:75px;width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18.513 7.119c.958-1.143 1.487-2.577 1.487-4.036v-3.083h-16v3.083c0 1.459.528 2.892 1.487 4.035l3.086 3.68c.567.677.571 1.625.009 2.306l-3.13 3.794c-.936 1.136-1.452 2.555-1.452 3.995v3.107h16v-3.107c0-1.44-.517-2.858-1.453-3.994l-3.13-3.794c-.562-.681-.558-1.629.009-2.306l3.087-3.68zm-4.639 7.257l3.13 3.794c.652.792.996 1.726.996 2.83h-12c0-1.104.343-2.039.996-2.829l3.129-3.793c1.167-1.414 1.159-3.459-.019-4.864l-3.086-3.681c-.66-.785-1.02-1.736-1.02-2.834h12c0 1.101-.363 2.05-1.02 2.834l-3.087 3.68c-1.177 1.405-1.185 3.451-.019 4.863z"></path></svg></div><div style="z-index:-1;height:45px;padding:12px 70px;z-index:0;background:#171733;margin-left:-24px;margin-top:-15px;">Massive Marketing Campaign</div></li><li class="d-flex flex-row align-items-center m-0"><div style="margin-top:-15px;margin-left:-50px;height:75px;width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18.513 7.119c.958-1.143 1.487-2.577 1.487-4.036v-3.083h-16v3.083c0 1.459.528 2.892 1.487 4.035l3.086 3.68c.567.677.571 1.625.009 2.306l-3.13 3.794c-.936 1.136-1.452 2.555-1.452 3.995v3.107h16v-3.107c0-1.44-.517-2.858-1.453-3.994l-3.13-3.794c-.562-.681-.558-1.629.009-2.306l3.087-3.68zm-4.639 7.257l3.13 3.794c.652.792.996 1.726.996 2.83h-12c0-1.104.343-2.039.996-2.829l3.129-3.793c1.167-1.414 1.159-3.459-.019-4.864l-3.086-3.681c-.66-.785-1.02-1.736-1.02-2.834h12c0 1.101-.363 2.05-1.02 2.834l-3.087 3.68c-1.177 1.405-1.185 3.451-.019 4.863z"></path></svg></div><div style="z-index:-1;height:45px;padding:12px 70px;z-index:0;background:#171733;margin-left:-24px;margin-top:-15px;">YouTube, Twitter &amp; TikTok 
- Influencers</div></li>
-</ul></div>
-</div><div class="d-flex d-lg-none row mt-3 mb-4" data-aos="fade"><div class="col-12 col-lg-6"><div class="phase-title-wrapper mx-auto mx-lg-0 ms-lg-auto d-flex flex-column justify-content-center align-items-center" style="height:200px;width:200px;border:4px solid #F2BC1C;border-radius:50%;background:transparent"><h3 style="font-weight:700;font-size:2em;">PHASE 4</h3></div></div>
-<div class="col-12 col-lg-6 mt-4"><ul class="list-unstyled">
 
 
-<li class="d-flex flex-row align-items-center m-0"><div style="margin-left:-15px;margin-top:-15px;;min-height:75px;min-width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18.513 7.119c.958-1.143 1.487-2.577 1.487-4.036v-3.083h-16v3.083c0 1.459.528 2.892 1.487 4.035l3.086 3.68c.567.677.571 1.625.009 2.306l-3.13 3.794c-.936 1.136-1.452 2.555-1.452 3.995v3.107h16v-3.107c0-1.44-.517-2.858-1.453-3.994l-3.13-3.794c-.562-.681-.558-1.629.009-2.306l3.087-3.68zm-4.639 7.257l3.13 3.794c.652.792.996 1.726.996 2.83h-12c0-1.104.343-2.039.996-2.829l3.129-3.793c1.167-1.414 1.159-3.459-.019-4.864l-3.086-3.681c-.66-.785-1.02-1.736-1.02-2.834h12c0 1.101-.363 2.05-1.02 2.834l-3.087 3.68c-1.177 1.405-1.185 3.451-.019 4.863z"></path></svg></div><div style="font-size:0.875em;z-index:0;height:45px;padding:12px 40px;background:#171733;margin-left:-24px;margin-top:-15px;width:100%;white-space:nowrap;overflow:hidden;">Merchandise Launch</div></li>
-<li class="d-flex flex-row align-items-center m-0"><div style="margin-left:-15px;margin-top:-15px;;min-height:75px;min-width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18.513 7.119c.958-1.143 1.487-2.577 1.487-4.036v-3.083h-16v3.083c0 1.459.528 2.892 1.487 4.035l3.086 3.68c.567.677.571 1.625.009 2.306l-3.13 3.794c-.936 1.136-1.452 2.555-1.452 3.995v3.107h16v-3.107c0-1.44-.517-2.858-1.453-3.994l-3.13-3.794c-.562-.681-.558-1.629.009-2.306l3.087-3.68zm-4.639 7.257l3.13 3.794c.652.792.996 1.726.996 2.83h-12c0-1.104.343-2.039.996-2.829l3.129-3.793c1.167-1.414 1.159-3.459-.019-4.864l-3.086-3.681c-.66-.785-1.02-1.736-1.02-2.834h12c0 1.101-.363 2.05-1.02 2.834l-3.087 3.68c-1.177 1.405-1.185 3.451-.019 4.863z"></path></svg></div><div style="font-size:0.875em;z-index:0;height:45px;padding:12px 40px;background:#171733;margin-left:-24px;margin-top:-15px;width:100%;white-space:nowrap;overflow:hidden;">NFT Collection Launch</div></li>
-<li class="d-flex flex-row align-items-center m-0"><div style="margin-left:-15px;margin-top:-15px;;min-height:75px;min-width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18.513 7.119c.958-1.143 1.487-2.577 1.487-4.036v-3.083h-16v3.083c0 1.459.528 2.892 1.487 4.035l3.086 3.68c.567.677.571 1.625.009 2.306l-3.13 3.794c-.936 1.136-1.452 2.555-1.452 3.995v3.107h16v-3.107c0-1.44-.517-2.858-1.453-3.994l-3.13-3.794c-.562-.681-.558-1.629.009-2.306l3.087-3.68zm-4.639 7.257l3.13 3.794c.652.792.996 1.726.996 2.83h-12c0-1.104.343-2.039.996-2.829l3.129-3.793c1.167-1.414 1.159-3.459-.019-4.864l-3.086-3.681c-.66-.785-1.02-1.736-1.02-2.834h12c0 1.101-.363 2.05-1.02 2.834l-3.087 3.68c-1.177 1.405-1.185 3.451-.019 4.863z"></path></svg></div><div style="font-size:0.875em;z-index:0;height:45px;padding:12px 40px;background:#171733;margin-left:-24px;margin-top:-15px;width:100%;white-space:nowrap;overflow:hidden;">Staking Platform Launch</div></li>
-<li class="d-flex flex-row align-items-center m-0"><div style="margin-left:-15px;margin-top:-15px;;min-height:75px;min-width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18.513 7.119c.958-1.143 1.487-2.577 1.487-4.036v-3.083h-16v3.083c0 1.459.528 2.892 1.487 4.035l3.086 3.68c.567.677.571 1.625.009 2.306l-3.13 3.794c-.936 1.136-1.452 2.555-1.452 3.995v3.107h16v-3.107c0-1.44-.517-2.858-1.453-3.994l-3.13-3.794c-.562-.681-.558-1.629.009-2.306l3.087-3.68zm-4.639 7.257l3.13 3.794c.652.792.996 1.726.996 2.83h-12c0-1.104.343-2.039.996-2.829l3.129-3.793c1.167-1.414 1.159-3.459-.019-4.864l-3.086-3.681c-.66-.785-1.02-1.736-1.02-2.834h12c0 1.101-.363 2.05-1.02 2.834l-3.087 3.68c-1.177 1.405-1.185 3.451-.019 4.863z"></path></svg></div><div style="font-size:0.875em;z-index:0;height:45px;padding:12px 40px;background:#171733;margin-left:-24px;margin-top:-15px;width:100%;white-space:nowrap;overflow:hidden;">Swap Platform Launch</div></li><li class="d-flex flex-row align-items-center m-0"><div style="margin-left:-15px;margin-top:-15px;;min-height:75px;min-width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18.513 7.119c.958-1.143 1.487-2.577 1.487-4.036v-3.083h-16v3.083c0 1.459.528 2.892 1.487 4.035l3.086 3.68c.567.677.571 1.625.009 2.306l-3.13 3.794c-.936 1.136-1.452 2.555-1.452 3.995v3.107h16v-3.107c0-1.44-.517-2.858-1.453-3.994l-3.13-3.794c-.562-.681-.558-1.629.009-2.306l3.087-3.68zm-4.639 7.257l3.13 3.794c.652.792.996 1.726.996 2.83h-12c0-1.104.343-2.039.996-2.829l3.129-3.793c1.167-1.414 1.159-3.459-.019-4.864l-3.086-3.681c-.66-.785-1.02-1.736-1.02-2.834h12c0 1.101-.363 2.05-1.02 2.834l-3.087 3.68c-1.177 1.405-1.185 3.451-.019 4.863z"></path></svg></div><div style="font-size:0.875em;z-index:0;height:45px;padding:12px 40px;background:#171733;margin-left:-24px;margin-top:-15px;width:100%;white-space:nowrap;overflow:hidden;">CEX Listings</div></li>
-
-
-</ul></div>
-</div><div class="d-none d-lg-flex row mt-5 mb-4" data-aos="fade"><div class="col-12 col-lg-6 order-sm-1 order-lg-2"><div class="phase-title-wrapper mx-auto mx-lg-0 me-lg-auto d-flex flex-column justify-content-center align-items-center" style="height:285px;width:285px;border:4px solid #F2BC1C;border-radius:50%;background:transparent"><h3 style="font-weight:700;font-size:2em;">PHASE 4</h3></div></div>
-<div class="col-12 col-lg-6 order-sm-2 order-lg-1"><ul class="list-unstyled"><li class="d-flex flex-row-reverse align-items-center m-0"><div style="margin-top:-15px;margin-right:-50px;height:75px;width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18.513 7.119c.958-1.143 1.487-2.577 1.487-4.036v-3.083h-16v3.083c0 1.459.528 2.892 1.487 4.035l3.086 3.68c.567.677.571 1.625.009 2.306l-3.13 3.794c-.936 1.136-1.452 2.555-1.452 3.995v3.107h16v-3.107c0-1.44-.517-2.858-1.453-3.994l-3.13-3.794c-.562-.681-.558-1.629.009-2.306l3.087-3.68zm-4.639 7.257l3.13 3.794c.652.792.996 1.726.996 2.83h-12c0-1.104.343-2.039.996-2.829l3.129-3.793c1.167-1.414 1.159-3.459-.019-4.864l-3.086-3.681c-.66-.785-1.02-1.736-1.02-2.834h12c0 1.101-.363 2.05-1.02 2.834l-3.087 3.68c-1.177 1.405-1.185 3.451-.019 4.863z"></path></svg></div><div style="z-index:-1;height:45px;padding:12px 70px;z-index:0;background:#171733;margin-right:-24px;margin-top:-15px;">Merchandise Launch</div></li>
-
-<li class="d-flex flex-row-reverse align-items-center m-0"><div style="margin-top:-15px;margin-right:-25px;height:75px;width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18.513 7.119c.958-1.143 1.487-2.577 1.487-4.036v-3.083h-16v3.083c0 1.459.528 2.892 1.487 4.035l3.086 3.68c.567.677.571 1.625.009 2.306l-3.13 3.794c-.936 1.136-1.452 2.555-1.452 3.995v3.107h16v-3.107c0-1.44-.517-2.858-1.453-3.994l-3.13-3.794c-.562-.681-.558-1.629.009-2.306l3.087-3.68zm-4.639 7.257l3.13 3.794c.652.792.996 1.726.996 2.83h-12c0-1.104.343-2.039.996-2.829l3.129-3.793c1.167-1.414 1.159-3.459-.019-4.864l-3.086-3.681c-.66-.785-1.02-1.736-1.02-2.834h12c0 1.101-.363 2.05-1.02 2.834l-3.087 3.68c-1.177 1.405-1.185 3.451-.019 4.863z"></path></svg></div><div style="z-index:-1;height:45px;padding:12px 70px;z-index:0;background:#171733;margin-right:-24px;margin-top:-15px;">NFT Collection Launch</div></li>
-
-<li class="d-flex flex-row-reverse align-items-center m-0"><div style="margin-top:-15px;margin-right:0px;height:75px;width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18.513 7.119c.958-1.143 1.487-2.577 1.487-4.036v-3.083h-16v3.083c0 1.459.528 2.892 1.487 4.035l3.086 3.68c.567.677.571 1.625.009 2.306l-3.13 3.794c-.936 1.136-1.452 2.555-1.452 3.995v3.107h16v-3.107c0-1.44-.517-2.858-1.453-3.994l-3.13-3.794c-.562-.681-.558-1.629.009-2.306l3.087-3.68zm-4.639 7.257l3.13 3.794c.652.792.996 1.726.996 2.83h-12c0-1.104.343-2.039.996-2.829l3.129-3.793c1.167-1.414 1.159-3.459-.019-4.864l-3.086-3.681c-.66-.785-1.02-1.736-1.02-2.834h12c0 1.101-.363 2.05-1.02 2.834l-3.087 3.68c-1.177 1.405-1.185 3.451-.019 4.863z"></path></svg></div><div style="z-index:-1;height:45px;padding:12px 70px;z-index:0;background:#171733;margin-right:-24px;margin-top:-15px;">Staking Platform Launch</div></li><li class="d-flex flex-row-reverse align-items-center m-0"><div style="margin-top:-15px;margin-right:-25px;height:75px;width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18.513 7.119c.958-1.143 1.487-2.577 1.487-4.036v-3.083h-16v3.083c0 1.459.528 2.892 1.487 4.035l3.086 3.68c.567.677.571 1.625.009 2.306l-3.13 3.794c-.936 1.136-1.452 2.555-1.452 3.995v3.107h16v-3.107c0-1.44-.517-2.858-1.453-3.994l-3.13-3.794c-.562-.681-.558-1.629.009-2.306l3.087-3.68zm-4.639 7.257l3.13 3.794c.652.792.996 1.726.996 2.83h-12c0-1.104.343-2.039.996-2.829l3.129-3.793c1.167-1.414 1.159-3.459-.019-4.864l-3.086-3.681c-.66-.785-1.02-1.736-1.02-2.834h12c0 1.101-.363 2.05-1.02 2.834l-3.087 3.68c-1.177 1.405-1.185 3.451-.019 4.863z"></path></svg></div><div style="z-index:-1;height:45px;padding:12px 70px;z-index:0;background:#171733;margin-right:-24px;margin-top:-15px;">Swap Platform Launch</div></li>
-
-<li class="d-flex flex-row-reverse align-items-center m-0"><div style="margin-top:-15px;margin-right:-50px;height:75px;width:75px;background:#F2BC1C;border-radius:50%;border:15px solid #1D1D40;z-index:1;" class="d-flex flex-row align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M18.513 7.119c.958-1.143 1.487-2.577 1.487-4.036v-3.083h-16v3.083c0 1.459.528 2.892 1.487 4.035l3.086 3.68c.567.677.571 1.625.009 2.306l-3.13 3.794c-.936 1.136-1.452 2.555-1.452 3.995v3.107h16v-3.107c0-1.44-.517-2.858-1.453-3.994l-3.13-3.794c-.562-.681-.558-1.629.009-2.306l3.087-3.68zm-4.639 7.257l3.13 3.794c.652.792.996 1.726.996 2.83h-12c0-1.104.343-2.039.996-2.829l3.129-3.793c1.167-1.414 1.159-3.459-.019-4.864l-3.086-3.681c-.66-.785-1.02-1.736-1.02-2.834h12c0 1.101-.363 2.05-1.02 2.834l-3.087 3.68c-1.177 1.405-1.185 3.451-.019 4.863z"></path></svg></div><div style="z-index:-1;height:45px;padding:12px 70px;z-index:0;background:#171733;margin-right:-24px;margin-top:-15px;">CEX Listing</div></li>
-</ul></div>
-</div>
 
 
 </div>
 </section>
 
-<section class="section swap-section d-none">
-<div class="section-container swap-container container py-5 ">
-<div class="text-center">
-<h2 class="section-title swap-title mt-4 mb-4">PLATFORMS</h2>
-</div>
-<div class="row mb-4">
-<div class="col-12 text-center">
+<section id="swap" class="section swap-section">
+<div class="section-container swap-container container py-5">
+<h2 class="mt-4 section-title swap-title text-center aos-init" data-aos="fade">SWAP HERE</h2>
+
+<div class="row mt-5 mb-4">
+
+    <div class="col-12 aos-init" data-aos="fade"><iframe class="d-block mx-auto" src="https://poocoin.app/embed-swap?outputCurrency=0x8cae4770f963a7cfb8737d1d1dc993e6972a5fdf" height="480" style="border-radius:12px;max-width:400px;width:100%;"></iframe></div>
+
+
+	
+	
+
 
 </div>
+</div>
+</section>
+
+<section id="faq" class="section faq-section">
+<div class="section-container faq-container container py-5">
+<h2 class="mt-4 section-title faq-title text-center aos-init" data-aos="fade">FAQ</h2>
+
+<div class="row mb-4 mt-5">
+
+<div class="col-12 aos-init" data-aos="fade">
+<div class="accordion" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">What is Kuma Bank?</button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne" style="">
+      <div class="accordion-body">
+       Kuma Bank is a community-driven token deployed on the Binance Smart Chain through the BSC medium. It is community driven and backed by a strong team to deliver for investors with the goal of creating wealth and use case just by holding $KUMABANK. To achieve this vision, a detailed roadmap is laid out and the liquidity is locked initially to grant investors confidence in this project.
+</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">When was Kuma Bank fairlaunched?</button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo" style="">
+      <div class="accordion-body">
+To be announced.</div>
+    </div>
+  </div>
+  
+
+<div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">How long is the liquidity locked?</button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree" style="">
+      <div class="accordion-body">
+To be announced.</div>
+    </div>
+  </div><div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">What are the transaction fees?</button>
+    </h2>
+    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour" style="">
+      <div class="accordion-body">
+To be announced.
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+	
+	
+
+
 </div>
 </div>
 </section>
@@ -921,14 +975,14 @@ background-repeat: no-repeat;
 <li class="d-none"><a class="text-decoration-none" href="#" target="_blank" rel="nofollow">CRO Telegram</a></li>
 <li class="d-none"><a class="text-decoration-none" href="#" target="_blank" rel="nofollow">DEXScreener</a></li>
 <li class="d-none"><a class="text-decoration-none" href="#" target="_blank" rel="nofollow">MM.Finance</a></li>
-<li><a class="text-decoration-none mb-1" href="https://t.me/warrenbuffettcoin" target="_blank" rel="nofollow">Telegram</a></li>
+<li><a class="text-decoration-none mb-1" href="https://t.me/twinanceportal" target="_blank" rel="nofollow">Telegram</a></li>
 <li class="d-none"><a class="text-decoration-none" href="#" target="_blank" rel="nofollow">Discord</a></li>
 <li class="d-none"><a class="text-decoration-none" href="#" target="_blank" rel="nofollow">Reddit</a></li>
 <li class="d-none"><a class="text-decoration-none" href="#" target="_blank" rel="nofollow">Instagram</a></li>
 <li class="d-none"><a class="text-decoration-none" href="#" target="_blank" rel="nofollow">Facebook</a></li>
-<li class=""><a class="text-decoration-none" href="https://twitter.com/warrenbuffettcoin" target="_blank" rel="nofollow">Twitter</a></li>
-<li><a class="text-decoration-none" href="https://poocoin.app/tokens/0x97de8229145847599f99c7ab0247bb1391dc6836" target="_blank" rel="nofollow">Poocoin</a></li>
-<li><a class="text-decoration-none" href="https://pancakeswap.finance/swap?outputCurrency=0x97de8229145847599f99c7ab0247bb1391dc6836" target="_blank" rel="nofollow">Pancakeswap</a></li>
+<li class=""><a class="text-decoration-none" href="https://twitter.com/real_twinance/" target="_blank" rel="nofollow">Twitter</a></li>
+<li><a class="text-decoration-none" href="https://poocoin.app/tokens/0xa96621e770938374f24fa7a184bc5807dc7acbc5" target="_blank" rel="nofollow">Poocoin</a></li>
+<li><a class="text-decoration-none" href="https://pancakeswap.finance/swap?outputCurrency=0xa96621e770938374f24fa7a184bc5807dc7acbc5" target="_blank" rel="nofollow">Pancakeswap</a></li>
 </ul>
 </div>
 </div>
@@ -968,5 +1022,6 @@ AOS.init({
 
 });
 </script>
+
 
 </body></html>
